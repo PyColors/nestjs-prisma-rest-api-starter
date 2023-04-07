@@ -15,6 +15,7 @@ async function bootstrap() {
     .setTitle('NestJs Prisma REST API Starter')
     .setDescription('The NestJs Prisma REST API Starter description')
     .setVersion('0.1')
+    .addBearerAuth()
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
